@@ -1,8 +1,13 @@
 :root {
-  --main-white: #f0f0f0;
+  /* --main-white: #f0f0f0;
   --main-red: #be3144;
   --main-blue: #45567d;
-  --main-gray: #303841;   
+  --main-gray: #303841;    */
+
+  --main-white: #f0f0f0;
+  --main-red: #e5ab16;
+  --main-blue: #56932f;
+  --main-gray: #000000;
  } 
 * {
   margin: 0;
@@ -21,9 +26,19 @@ body {
   line-height: 1.4;
   color: var(--main-white);
 }
-ul {
+
+nav ul {
   list-style: none; 
 }
+
+section ul {
+  /* text-align: center;
+  list-style-position: inside; */
+  display: table; 
+  margin: 0 auto;
+  text-align: left;
+}
+
 .nav {
   display: flex;
   justify-content: flex-end;
