@@ -27,6 +27,8 @@ body {
   color: var(--main-white);
 }
 
+.link:hover { color: #4b76db; } /* CSS link hover (green) */
+
 nav ul {
   list-style: none; 
 }
