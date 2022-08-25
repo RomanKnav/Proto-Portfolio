@@ -27,7 +27,10 @@ body {
   color: var(--main-white);
 }
 
-.link:hover { color: #4b76db; } /* CSS link hover (green) */
+.link:hover { 
+  color: #4b76db; 
+  text-decoration: underline;
+} /* CSS link hover */
 
 nav ul {
   list-style: none; 
