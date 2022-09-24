@@ -163,13 +163,13 @@ h1 {
     padding: 1rem 0.5rem;
 }
 
-@media screen and (max-width:600px) {   
+/* @media screen and (max-width:600px) {   
   .project-image {
     display: block;
-    margin-left: 20%;   /* Defines the space outside the element, on the right side. */
+    margin-left: 20%;   /* Defines the space outside the element, on the right side.
     margin-right: 20%;        
   }
-}
+} */
 
 /* SKILLS STUFF */
 .skills-section {
@@ -217,6 +217,7 @@ h1 {
 /* if screen is less than 500px wide (my phone is 428)*/
 @media screen and (max-width:600px) {   
   .about-image {
+    width: 200px;
     display: block;
     margin-left: 20%;   /* Defines the space outside the element, on the right side. */
     margin-right: 20%;        
