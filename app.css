@@ -214,7 +214,7 @@ h1 {
   width: 40%;
 }
 
-/* if screen is less than 500px wide (my phone is 428)*/
+/* if screen is less than 500px wide (my phone is 428). SUCCESS.*/
 @media screen and (max-width:600px) {   
   .about-image {
     width: 200px;
