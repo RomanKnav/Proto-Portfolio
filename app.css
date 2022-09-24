@@ -212,6 +212,7 @@ h1 {
 /* if screen is less than 500px wide (my phone is 428)*/
 @media screen and (max-width:500px) {   
   .about-image {
+    display: block;
     margin-left: 20%;   /* Defines the space outside the element, on the right side. */
     margin-right: 20%;        
   }
