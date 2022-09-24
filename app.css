@@ -1,3 +1,8 @@
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+} 
+
 :root {
   /* --main-white: #f0f0f0;
   --main-red: #be3144;
@@ -156,6 +161,11 @@ h1 {
     padding: 1rem 0.5rem;
 }
 
+@media screen and (max-width:320px) {
+
+
+}
+
 /* SKILLS STUFF */
 .skills-section {
   
@@ -193,18 +203,21 @@ h1 {
   /*   Underlines the header with a white line */
 }
 .about-image {
-  /* display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%; */
-
-  width: 25vw;
-  /* height: auto; */
-  height: 50vh;
-  
-
-  /* CENTERS IMAGE AND MAKES IT RESPONSIVE */
+  width: 40%;
 }
+
+/* if screen is less than 500px wide (my phone is 428)*/
+@media screen and (max-width:500px) {   
+  .about-image {
+    margin-left: 20%;   /* Defines the space outside the element, on the right side. */
+    margin-right: 20%;        
+  }
+}
+
+
 section ul {
   /* text-align: center;
   list-style-position: inside; */
