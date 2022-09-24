@@ -193,10 +193,16 @@ h1 {
   /*   Underlines the header with a white line */
 }
 .about-image {
-  display: block;
+  /* display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 40%; */
+
+  max-width: 50%;
+  /* height: auto; */
+  max-height: 50%;
+  width: auto\9;
+
   /* CENTERS IMAGE AND MAKES IT RESPONSIVE */
 }
 section ul {
