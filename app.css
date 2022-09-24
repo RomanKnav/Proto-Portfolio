@@ -198,10 +198,10 @@ h1 {
   margin-right: auto;
   width: 40%; */
 
-  max-width: 50%;
+  width: 25vw;
   /* height: auto; */
-  max-height: 50%;
-  width: auto\9;
+  height: 50vh;
+  
 
   /* CENTERS IMAGE AND MAKES IT RESPONSIVE */
 }
