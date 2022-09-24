@@ -24,6 +24,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem; /* 18px */
@@ -152,8 +153,9 @@ h1 {
 .project-image {
   height: calc(100% - 5.8rem);
   width: 100%;
-  /* "height: calc(100% - 5.8rem);" gives the images uniformity in their height and therefore the amount of background that they cover
-  width:100% ensures that the images take up the width of the screen, nothing more, nothing less. I wonder how its gets uniform spacing on both sides of the grid */
+  /* "height: calc(100% - 5.8rem);" gives the images uniformity in their height and therefore the amount of background that they 
+  cover. width:100% ensures that the images take up the width of the screen, nothing more, nothing less. I wonder how its gets 
+  uniform spacing on both sides of the grid */
 } 
 
 .project-title {
@@ -161,9 +163,12 @@ h1 {
     padding: 1rem 0.5rem;
 }
 
-@media screen and (max-width:320px) {
-
-
+@media screen and (max-width:600px) {   
+  .project-image {
+    display: block;
+    margin-left: 20%;   /* Defines the space outside the element, on the right side. */
+    margin-right: 20%;        
+  }
 }
 
 /* SKILLS STUFF */
@@ -210,7 +215,7 @@ h1 {
 }
 
 /* if screen is less than 500px wide (my phone is 428)*/
-@media screen and (max-width:500px) {   
+@media screen and (max-width:600px) {   
   .about-image {
     display: block;
     margin-left: 20%;   /* Defines the space outside the element, on the right side. */
