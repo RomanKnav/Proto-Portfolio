@@ -150,13 +150,28 @@ h1 {
   border-radius: 2px;
 }
 
+/* @media screen and (max-width:600px) {   
+  .about-image {
+    width: 200px;
+    display: block;
+    margin-left: 20%; 
+    margin-right: 20%;        
+  }
+} */
+
 .project-image {
   height: calc(100% - 5.8rem);
   width: 100%;
   /* "height: calc(100% - 5.8rem);" gives the images uniformity in their height and therefore the amount of background that they 
   cover. width:100% ensures that the images take up the width of the screen, nothing more, nothing less. I wonder how its gets 
   uniform spacing on both sides of the grid */
-} 
+}
+
+@media screen and (max-width: 600px) {
+  .project-image {
+    height: 200px;
+  }
+}
 
 .project-title {
     font-size: 2rem;
