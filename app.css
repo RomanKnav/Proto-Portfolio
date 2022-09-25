@@ -3,6 +3,33 @@
   zoom: 1.0 ;
 } 
 
+/* FOR MOBILE */
+@media screen and (max-width: 600px) {
+  .nav-list a {    
+    display: block;
+    font-size: 16px;
+    padding: 1rem;
+  }   
+}
+
+@media screen and (max-width: 600px) {
+  .projects-grid {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem; */
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+  .project-image {
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+  }
+}
+
 :root {
   /* --main-white: #f0f0f0;
   --main-red: #be3144;
@@ -73,14 +100,6 @@ nav ul {
 a {
   text-decoration: none;
   color: var(--main-white);
-}
-
-@media screen and (max-width: 600px) {
-  .nav-list a {    
-    display: block;
-    font-size: 16px;
-    padding: 1rem;
-  }   
 }
 
 h1,
@@ -157,15 +176,6 @@ h1 {
   border-radius: 2px;
 }
 
-/* @media screen and (max-width:600px) {   
-  .about-image {
-    width: 200px;
-    display: block;
-    margin-left: 20%; 
-    margin-right: 20%;        
-  }
-} */
-
 .project-image {
   height: calc(100% - 5.8rem);
   width: 100%;
@@ -174,42 +184,13 @@ h1 {
   uniform spacing on both sides of the grid */
 }
 
-/* FOR MOBILE */
-@media screen and (max-width: 600px) {
-  .projects-grid {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem; */
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
-  }
-
-  /* .project-image {
-    height: 100px;
-    width: 100%;
-  } */
-
-  .project-image {
-    max-width: 100%;
-    min-width: 300px;
-    height: auto;
-  }
-}
-
 .project-title {
     font-size: 2rem;
     padding: 1rem 0.5rem;
 }
 
-/* @media screen and (max-width:600px) {   
-  .project-image {
-    display: block;
-    margin-left: 20%;   /* Defines the space outside the element, on the right side.
-    margin-right: 20%;        
-  }
-} */
+
+
 
 /* SKILLS STUFF */
 .skills-section {
@@ -295,14 +276,16 @@ figure {
 
 .feats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,                 minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 6rem;
   /* gets the element with the "projects-grid" class (a div), and sets its display to "grid".  
-  /* "grid-template-columns" basically determines the layout of all the columns. In this case, it uses auto-fit to fit any amount of squares on the screen, so long as they can fit. All the squares that cannot fit get pushed down to other columns. The squares can shrink down to a minimum of 320px, and a max of 1 fraction each.
+  "grid-template-columns" basically determines the layout of all the columns. In this case, it uses auto-fit to fit any 
+  amount of squares on the screen, so long as they can fit. All the squares that cannot fit get pushed down to other columns. 
+  The squares can shrink down to a minimum of 320px, and a max of 1 fraction each.
   "width: 100%" makes sure the columns take up the entire width of the screen 
   "margin-bottom: 6rem" determines the amount of space below the grid*/
 }
