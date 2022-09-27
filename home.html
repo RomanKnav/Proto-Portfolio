@@ -146,22 +146,23 @@ import 'app.css';
       </a>     
       </div>
     </div>
-    
+
     <script>
-      var coll = document.getElementsByClassName("collapsible");  // list of all "collapsible" class elements
+      var coll = document.getElementsByClassName("collapsible");
       var i;
+      
       for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {    // if clicked on any collapsibles...
+        coll[i].addEventListener("click", function() {
           this.classList.toggle("active");
           var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
           } else {
-            content.style.display = "block";
+            content.style.maxHeight = content.scrollHeight + "px";
           }
         });
       }
-    </script>
+      </script>
   </section>
 
   <!-- ABOUT ME SECTION -->
