@@ -1,11 +1,17 @@
+/* "future-proofing" */
 @viewport {
   width: device-width ;
   zoom: 1.0 ;
 } 
 
+/* @media screen and (max-width:320px) {
+  /* CSS for screens that are 320 pixels or less will be put in this section 
+}  */
+
 /* FOR MOBILE */
-@media screen and (max-width: 600px) {
-  /* for shrinking the nav bar */
+@media screen and (max-width: 1500px) {
+  /* CSS for screens that are 1500 pixels or less will be put in this section */ 
+  /* iphone res: 1284 x 2778 pixels */
   .nav-list a {    
     display: block;
     font-size: 16px;
@@ -33,9 +39,11 @@
 /* MACRO STUFF */
 :root {
   --main-white: #f0f0f0;
-  --main-yellow: #e5ab16;
+  --main-orange: #e5ab16;
+  --second-orange: #e8c468;
   --main-green: #56932f;
   --main-black: #000000;
+  --main-box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
  } 
 * {
   margin: 0;
@@ -99,7 +107,7 @@ nav ul {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-yellow);   
+  background: var(--main-orange);   
   
   z-index: 10;
 } 
@@ -147,7 +155,7 @@ nav ul {
 /*   Underlines the header with a white line */
 }
 /* "Automagic" image grid stuff */
-.projects-grid {
+.projects-grid, more-projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
@@ -162,8 +170,9 @@ nav ul {
   "margin-bottom: 6rem" determines the amount of space below the grid*/
 }
 .project {
-  background: var(--main-yellow);
-  box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+  background: var(--main-orange);
+  /* box-shadow: 1px 1px 2px rgb(0 0 0 / 50%); */
+  box-shadow: var(--main-box-shadow);
   border-radius: 2px;
 }
 .project-image {
@@ -178,11 +187,11 @@ nav ul {
     padding: 1rem 0.5rem;
 }
 
-/* COLLAPSABLE STUFF */
- /* Style the button that is used to open and close the collapsible content */
+/* COLLAPSIBLE STUFF */
  .collapsible {
-  background-color: #eee;
-  color: #444;
+  box-shadow: var(--main-box-shadow);
+  background-color: var(--main-orange);
+  color: var(--main-white);
   cursor: pointer;
   padding: 18px;
   width: 30%;
@@ -190,19 +199,18 @@ nav ul {
   text-align: center;
   outline: none;
   font-size: 15px;
+  margin-bottom: 5%;
 }
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move 
-the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: #e8c468;
 }
-/* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 0 18px;
-  display: none;
+  max-height: 0;
   overflow: hidden;
-  background-color: --main-green;
-} 
+  transition: max-height 0.5s ease-out;
+  background-color: var(--main-green);
+}
 
 /*  ABOUT ME STUFF */
 .about-section {
@@ -284,4 +292,4 @@ section ul {
   margin: 0 auto;
   text-align: left;
 }
-
+ 
