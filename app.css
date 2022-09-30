@@ -3,46 +3,94 @@
   zoom: 1.0 ;
 } 
 
-:root {
-  /* --main-white: #f0f0f0;
-  --main-red: #be3144;
-  --main-blue: #45567d;
-  --main-gray: #303841;    */
+/* FOR MOBILE */
+@media screen and (max-width: 600px) {
+  /* for shrinking the nav bar */
+  .nav-list a {    
+    display: block;
+    font-size: 16px;
+    padding: 1rem;
+  }   
+  .projects-grid {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  .project-image {
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+  }
+  .about-image {
+    width: 200px;
+    display: block;
+    margin-left: 20%;   /* Defines the space outside the element, on the right side. */
+    margin-right: 20%;        
+  }
+}
 
+/* MACRO STUFF */
+:root {
   --main-white: #f0f0f0;
-  --main-red: #e5ab16;
-  --main-blue: #56932f;
-  --main-gray: #000000;
+  --main-orange: #e5ab16;
+  --second-orange: #e8c468;
+  --main-green: #56932f;
+  --main-black: #000000;
+  --main-box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
  } 
 * {
   margin: 0;
   padding: 0;
 }
-
 html {
   box-sizing: border-box; 
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
+/* there's no "body" anywhere in the html, but this stuff is still applied */
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem; /* 18px */
+  font-size: 1.8rem; 
   font-weight: 400;
   line-height: 1.4;
   color: var(--main-white);
 }
-
 .link { 
   text-decoration: underline;
   line-height: 22pt;
   font-size: 90%;
 } 
-
 .link:hover { 
   color: #4b76db; 
 } /* CSS link hover */
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+h1 {
+  font-size: 6rem;
+}
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
 
+/* COLORS */
+.welcome-section, .about-section, .skills-section {
+  background-color: rgb(0, 0, 0);
+  background-image: linear-gradient(62deg, #444445 0%, #333234 100%);
+}
+.about-section-header , .feats-section-header, skills-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+  /*   Underlines the header with a white line */
+}
+
+/* NAV BAR STUFF */
 nav ul {
   list-style: none; 
 }
@@ -53,7 +101,7 @@ nav ul {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-red);   
+  background: var(--main-orange);   
   
   z-index: 10;
 } 
@@ -61,39 +109,14 @@ nav ul {
   display: flex; 
   margin-right: 2rem;
 }
-
 .nav-list a {    
   display: block;
   font-size: 2.2rem;
   padding: 2rem;
 }   
 .nav-list a:hover {
-  background: var(--main-blue);
+  background: var(--main-green);
 } 
-a {
-  text-decoration: none;
-  color: var(--main-white);
-} 
-
-
-h1,
-h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-h1 {
-  font-size: 6rem;
-}
-
-.welcome-section, .about-section, .skills-section {
-  /* background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
-
-  background-color: rgb(0, 0, 0);
-  background-image: linear-gradient(62deg, #444445 0%, #333234 100%);
-}
-
 
 /* WELCOME SECTION STUFF: */
 .welcome-section {
@@ -116,21 +139,17 @@ h1 {
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--main-blue);
-  /* background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+  background: var(--main-green);
   /* aligns eveything in the middle of the page, with 20rem and 2rem vertical and horizontal padding. */
 }
-
 .projects-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(--main-white);
 /*   Underlines the header with a white line */
 }
-
 /* "Automagic" image grid stuff */
-.projects-grid {
+.projects-grid, more-projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
@@ -139,26 +158,17 @@ h1 {
   margin: 0 auto;
   margin-bottom: 6rem;
   /* gets the element with the "projects-grid" class (a div), and sets its display to "grid".  */
-  /* "grid-template-columns" basically determines the layout of all the columns. In this case, it uses auto-fit to fit any amount of squares on the screen, so long as they can fit. All the squares that cannot fit get pushed down to other columns. The squares can shrink down to a minimum of 320px, and a max of 1 fraction each.
-  "width: 100%" makes sure the columns take up the entire width of the screen 
+  /* "grid-template-columns" basically determines the layout of all the columns. In this case, it uses auto-fit to fit any amount of 
+  squares on the screen, so long as they can fit. All the squares that cannot fit get pushed down to other columns. The squares can shrink 
+  down to a minimum of 320px, and a max of 1 fraction each. "width: 100%" makes sure the columns take up the entire width of the screen 
   "margin-bottom: 6rem" determines the amount of space below the grid*/
 }
-
 .project {
-  background: var(--main-red);
-  box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+  background: var(--main-orange);
+  /* box-shadow: 1px 1px 2px rgb(0 0 0 / 50%); */
+  box-shadow: var(--main-box-shadow);
   border-radius: 2px;
 }
-
-/* @media screen and (max-width:600px) {   
-  .about-image {
-    width: 200px;
-    display: block;
-    margin-left: 20%; 
-    margin-right: 20%;        
-  }
-} */
-
 .project-image {
   height: calc(100% - 5.8rem);
   width: 100%;
@@ -166,60 +176,34 @@ h1 {
   cover. width:100% ensures that the images take up the width of the screen, nothing more, nothing less. I wonder how its gets 
   uniform spacing on both sides of the grid */
 }
-
-@media screen and (max-width: 600px) {
-  .projects-grid {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem; */
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
-  }
-
-  /* .project-image {
-    height: 100px;
-    width: 100%;
-  } */
-
-  .project-image {
-    max-width: 100%;
-    min-width: 300px;
-    height: auto;
-  }
-}
-
 .project-title {
     font-size: 2rem;
     padding: 1rem 0.5rem;
 }
 
-/* @media screen and (max-width:600px) {   
-  .project-image {
-    display: block;
-    margin-left: 20%;   /* Defines the space outside the element, on the right side.
-    margin-right: 20%;        
-  }
-} */
-
-/* SKILLS STUFF */
-.skills-section {
-  
-  margin: 0 auto 6rem auto;
-  /* background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);  */
-  /* background: #56932f; */
-  margin: 0 auto;
-  padding: 10rem 2rem;
- 
-}
-
-.skills-section p {
+/* COLLAPSIBLE STUFF */
+ .collapsible {
+  box-shadow: var(--main-box-shadow);
+  background-color: var(--main-orange);
+  color: var(--main-white);
+  cursor: pointer;
+  padding: 18px;
+  width: 30%;
+  border: none;
   text-align: center;
-  max-width: 140px;
-  margin: 0 auto 3rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 5%;
+}
+.active, .collapsible:hover {
+  background-color: #e8c468;
+}
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  background-color: var(--main-green);
 }
 
 /*  ABOUT ME STUFF */
@@ -233,11 +217,11 @@ h1 {
     /*margin-bottom: 6rem;
     padding: 10rem 5rem; */
 }
-.about-section-header , .feats-section-header, skills-section-header {
-  max-width: 640px;
-  margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
-  /*   Underlines the header with a white line */
+.about-section p {
+  /* how to properly center text: */
+  margin-left: auto;    
+  margin-right: auto;
+  width: 80%
 }
 .about-image {
   display: block;
@@ -245,26 +229,6 @@ h1 {
   margin-right: auto;
   width: 40%;
 }
-
-/* if screen is less than 500px wide (my phone is 428). SUCCESS.*/
-@media screen and (max-width:600px) {   
-  .about-image {
-    width: 200px;
-    display: block;
-    margin-left: 20%;   /* Defines the space outside the element, on the right side. */
-    margin-right: 20%;        
-  }
-}
-
-
-section ul {
-  /* text-align: center;
-  list-style-position: inside; */
-  display: table; 
-  margin: 0 auto;
-  text-align: left;
-}
-
 figure {
   text-align: center;
   font-style: italic;
@@ -272,31 +236,54 @@ figure {
   text-indent: 0;
   margin: 0.5em;
   padding: 0.5em;
-/*  CENTERS THE IMAGE CAPTION  */
+/* centers the image caption */
 }
 
-/* ACCOMPLISHMENTS STUFF  */
+/* ACCOMPLISHMENTS STUFF */
 .feats-section {
   text-align: center;
   padding: 10rem 2rem;
   /*background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
-  background: var(--main-blue);
+  background: var(--main-green);
   /* aligns eveything in the middle of the page, with 20rem and 2rem vertical and horizontal padding. */
 }
-
 .feats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,                 minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 6rem;
   /* gets the element with the "projects-grid" class (a div), and sets its display to "grid".  
-  /* "grid-template-columns" basically determines the layout of all the columns. In this case, it uses auto-fit to fit any amount of squares on the screen, so long as they can fit. All the squares that cannot fit get pushed down to other columns. The squares can shrink down to a minimum of 320px, and a max of 1 fraction each.
+  "grid-template-columns" basically determines the layout of all the columns. In this case, it uses auto-fit to fit 
+  any amount of squares on the screen, so long as they can fit. All the squares that cannot fit get pushed down to 
+  other columns. The squares can shrink down to a minimum of 320px, and a max of 1 fraction each.
   "width: 100%" makes sure the columns take up the entire width of the screen 
   "margin-bottom: 6rem" determines the amount of space below the grid*/
 }
 
+/* SKILLS STUFF */
+.skills-section {
+  margin: 0 auto 6rem auto;
+  /* background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);  */
+  /* background: #56932f; */
+  margin: 0 auto;
+  padding: 10rem 2rem;
+ 
+}
+.skills-section p {
+  text-align: center;
+  max-width: 140px;
+  margin: 0 auto 3rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+}
+section ul {      
+  /* for the "skills" and "about me" bullet point lists */
+  display: table; 
+  margin: 0 auto;
+  text-align: left;
+}
 
