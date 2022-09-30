@@ -4,11 +4,14 @@
 } 
 
 /* FOR MOBILE */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) { */
+@media screen and (max-width: 2000px) {
+
   /* for shrinking the nav bar */
   .nav-list a {    
     display: block;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 10px;
     padding: 1rem;
   }   
   .projects-grid {
