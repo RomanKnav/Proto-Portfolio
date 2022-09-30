@@ -1,7 +1,7 @@
-@viewport {
+/* @viewport {
   width: device-width ;
   zoom: 1.0 ;
-} 
+}  */
 
 /* FOR MOBILE */
 @media screen and (max-width: 600px) {
