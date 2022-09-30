@@ -178,9 +178,15 @@ h1 {
     margin-bottom: 6rem;
   }
 
-  .project-image {
+  /* .project-image {
     height: 100px;
     width: 100%;
+  } */
+
+  .project-image {
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
   }
 }
 
