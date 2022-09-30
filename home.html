@@ -2,13 +2,17 @@
 import 'app.css';
 
 <!DOCTYPE html>
-<!-- this line needed for some bs -->
 <html lang="en">
+<!-- <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roman's Website</title>
+  <link rel="stylesheet" type="text/css" href="./app.css"> 
+</head> -->
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <!-- <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
-  <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;  user-scalable=0;" name="viewport"> -->
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;  user-scalable=0;" name="viewport">
   <link rel="stylesheet" href="app.css">
 </head>
 
@@ -39,18 +43,23 @@ import 'app.css';
   <section id="welcome-section" class="welcome-section">
     <h1>Roman Navarro</h1>
     <p>Self-taught programming enthusiast</p>
+
     <br/>
     <a class="link" href="https://github.com/RomanRenders" target="_blank" >Github</a>
     <a class="link" href="https://www.linkedin.com/in/roman-navarro-258156231/" target="_blank" >LinkedIn</a>
     <a class="link" href="https://www.youtube.com/channel/UCA1dacq61vOmKCM5TaKvcBw" target="_blank" >Youtube Channel</a>
     <a class="link" href="https://twitter.com/RomanRenders" target="_blank" >Twitter</a>
     <a class="link" href="https://www.instagram.com/romanrenders/" target="_blank" >Instagram</a>
+
+
   </section>
 
   <!-- PROJECTS SECTION STUFF:  -->
+  <!-- <section id="projects" class="projects-section"> -->
   <section id="projects" class="projects-section">
-    <h2 class="projects-section-header">My Projects</h2>
 
+    <h2 class="projects-section-header">My Projects</h2>
+    
     <div class=projects-grid> 
       <a href=https://do
         target="_blank"
@@ -90,7 +99,7 @@ import 'app.css';
       </a>
       <a href="https://hangman-romanrenders.herokuapp.com/"
         target="_blank"
-        class="project project-tile">
+        class="project-tile">
           <img
           class="project-image"
           src="https://i.imgur.com/HSXvEz4.png"
@@ -101,71 +110,8 @@ import 'app.css';
         </p>
       </a>     
     </div>
-
-    <!-- COLLAPSIBLE STUFF -->
-    <button type="button" class="collapsible">View More Projects</button>
-    <div class="content">
-      <!-- PUT STUFF IN HERE. -->
-      <div class=projects-grid> 
-        <a
-          href="https://ryewc.csb.app/"
-          target="_blank"
-          class="project project-tile">
-          <img
-            class="project-image"
-            src="https://i.imgur.com/CMz1p8I.png"
-            alt="project"
-          />
-          <p class="project-title"> 
-            Sheep's Run II Cancelled
-          </p>
-        </a>
-        <a href="https://89coqf.csb.app/"
-          target="_blank"
-          class="project project-tile">
-            <img
-            class="project-image"
-            src="https://i.imgur.com/PIAgzQu.png"
-            alt="project"
-          />
-          <p class="project-title"> 
-            Ping Pong
-          </p>
-        </a>
-        <a href="https://78qiot.csb.app/"
-        target="_blank"
-        class="project project-tile">
-          <img
-          class="project-image"
-          src="https://i.imgur.com/qT6JjaW.png"
-          alt="project"
-        />
-        <p class="project-title"> 
-          Run & Gun
-        </p>
-      </a>         
-    </div>
-  </div>
-
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  </script>
   </section>
 
-  <!-- ABOUT ME SECTION -->
   <section id="about" class="about-section">
     <h2 class="about-section-header">About Me</h2>
     <p>My name is Roman Navarro. I'm from Stockton, California, and I am currently a Sophmore at Stanislaus State University. I am 
@@ -181,7 +127,6 @@ import 'app.css';
     architect and maintenance technician. Certain skills I've acquired from this job that I feel will translate over nicely
     to my future career as a frontend developer include: 
   </p>
-</br>
   
   <ul>
     <li>discipline -waking up every morning consistently at 7, including on my days off</li>
