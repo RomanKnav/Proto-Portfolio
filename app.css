@@ -8,8 +8,7 @@
   /* for shrinking the nav bar */
   .nav-list a {    
     display: block;
-    /* font-size: 16px; */
-    font-size: 1px;
+    font-size: 16px;
     padding: 1rem;
   }   
   .projects-grid {
