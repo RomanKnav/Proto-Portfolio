@@ -5,43 +5,18 @@
 
 :root {
   /* --main-white: #f0f0f0;
-  --main-orange: #be3144;
-  --main-green: #45567d;
-  --main-black: #303841;    */
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;    */
 
   --main-white: #f0f0f0;
-  --main-orange: #e5ab16;
-  --second-orange: #e8c468;
-  --main-green: #56932f;
-  --main-black: #000000;
-  --main-box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+  --main-red: #e5ab16;
+  --main-blue: #56932f;
+  --main-gray: #000000;
  } 
 * {
   margin: 0;
   padding: 0;
-}
-
-@media screen and (max-width: 600px) {
-  .projects-grid {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem; */
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
-  }
-
-  /* .project-image {
-    height: 100px;
-    width: 100%;
-  } */
-
-  .project-image {
-    max-width: 100%;
-    min-width: 300px;
-    height: auto;
-  }
 }
 
 html {
@@ -78,7 +53,7 @@ nav ul {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-orange);   
+  background: var(--main-red);   
   
   z-index: 10;
 } 
@@ -93,7 +68,7 @@ nav ul {
   padding: 2rem;
 }   
 .nav-list a:hover {
-  background: var(--main-green);
+  background: var(--main-blue);
 } 
 a {
   text-decoration: none;
@@ -141,7 +116,7 @@ h1 {
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--main-green);
+  background: var(--main-blue);
   /* background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
   /* aligns eveything in the middle of the page, with 20rem and 2rem vertical and horizontal padding. */
@@ -170,10 +145,19 @@ h1 {
 }
 
 .project {
-  background: var(--main-orange);
+  background: var(--main-red);
   box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
   border-radius: 2px;
 }
+
+/* @media screen and (max-width:600px) {   
+  .about-image {
+    width: 200px;
+    display: block;
+    margin-left: 20%; 
+    margin-right: 20%;        
+  }
+} */
 
 .project-image {
   height: calc(100% - 5.8rem);
@@ -183,10 +167,41 @@ h1 {
   uniform spacing on both sides of the grid */
 }
 
+@media screen and (max-width: 600px) {
+  .projects-grid {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem; */
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+  /* .project-image {
+    height: 100px;
+    width: 100%;
+  } */
+
+  .project-image {
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+  }
+}
+
 .project-title {
     font-size: 2rem;
     padding: 1rem 0.5rem;
 }
+
+/* @media screen and (max-width:600px) {   
+  .project-image {
+    display: block;
+    margin-left: 20%;   /* Defines the space outside the element, on the right side.
+    margin-right: 20%;        
+  }
+} */
 
 /* SKILLS STUFF */
 .skills-section {
@@ -206,34 +221,6 @@ h1 {
   margin: 0 auto 3rem auto;
   border-bottom: 0.2rem solid var(--main-white);
 }
-
-/* COLLAPSIBLE STUFF */
- /* Style the button that is used to open and close the collapsible content */
- .collapsible {
-  /* box-shadow: 1px 1px 2px rgb(0 0 0 / 50%); */
-  box-shadow: var(--main-box-shadow);
-  background-color: var(--main-orange);
-  color: var(--main-white);
-  font-size: 15px;
-  margin-bottom: 5%;
-  transition: max-height 0.5s ease-out;
-  background-color: var(--main-green);
-}
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move 
-the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
-  background-color: #e8c468;
-}
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding-top: 10%;
-  padding: 0 18px;
-  display: none;
-  max-height: 0;
-  overflow: hidden;
-  background-color: --main-green;
-} 
 
 /*  ABOUT ME STUFF */
 .about-section {
@@ -269,6 +256,7 @@ the mouse over it (hover) */
   }
 }
 
+
 section ul {
   /* text-align: center;
   list-style-position: inside; */
@@ -293,7 +281,7 @@ figure {
   padding: 10rem 2rem;
   /*background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
-  background: var(--main-green);
+  background: var(--main-blue);
   /* aligns eveything in the middle of the page, with 20rem and 2rem vertical and horizontal padding. */
 }
 
