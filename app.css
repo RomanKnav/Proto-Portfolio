@@ -175,7 +175,8 @@ h1 {
   .project-image, .cert-image {
     max-width: 100%;
     min-width: 300px;
-    height: auto;
+    /* height: auto; */
+    height: 100px;
   }
 }
 
