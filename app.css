@@ -257,6 +257,7 @@ h1 {
 @media screen and (max-width:600px) {   
   .about-image {
     width: 200px;
+    height: 40%;
     display: block;
     margin-left: 20%;   /* Defines the space outside the element, on the right side. */
     margin-right: 20%;        
