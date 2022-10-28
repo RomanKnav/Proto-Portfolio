@@ -156,6 +156,11 @@ h1 {
   uniform spacing on both sides of the grid */
 }
 
+.cert-image {
+  height: calc(100% - 5.8rem);
+  width: 100%;
+}
+
 /* FOR MOBILE */
 @media screen and (max-width: 600px) {
   .projects-grid {
@@ -225,7 +230,7 @@ h1 {
     /*margin-bottom: 6rem;
     padding: 10rem 5rem; */
 }
-.about-section-header , .feats-section-header, skills-section-header {
+.about-section-header , .feats-section-header, .skills-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(--main-white);
@@ -242,7 +247,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 27%;
-  height: 70%;
+  height: 52%;
 }
 
 
@@ -278,16 +283,24 @@ figure {
   padding: 10rem 2rem;
   background: var(--main-blue);
   /* aligns eveything in the middle of the page, with 20rem and 2rem vertical and horizontal padding. */
+  /* box-shadow: 1px 1px 2px rgb(0 0 0 / 50%); */
+}
+
+/* .active, .collapsible:hover {
+  background-color: #e8c468;
+} */
+ .feats-grid a:hover {
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
 }
 
 .feats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,                 minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 6rem;
+  /* margin-bottom: 6rem; */
   /* gets the element with the "projects-grid" class (a div), and sets its display to "grid".  
   /* "grid-template-columns" basically determines the layout of all the columns. In this case, it uses auto-fit to fit any amount of squares on the screen, so long as they can fit. All the squares that cannot fit get pushed down to other columns. The squares can shrink down to a minimum of 320px, and a max of 1 fraction each.
   "width: 100%" makes sure the columns take up the entire width of the screen 
