@@ -72,6 +72,7 @@ a {
   color: var(--main-white);
 }
 
+/* NAV BAR FOR MOBILE */
 @media screen and (max-width: 600px) {
   .nav-list a {    
     display: block;
@@ -94,7 +95,6 @@ h1 {
   background-color: rgb(0, 0, 0);
   background-image: linear-gradient(62deg, #444445 0%, #333234 100%);
 }
-
 
 /* WELCOME SECTION STUFF: */
 .welcome-section {
@@ -163,7 +163,7 @@ h1 {
   width: 100%;
 }
 
-/* FOR MOBILE */
+/* PROJECT STUFF FOR MOBILE */
 @media screen and (max-width: 600px) {
   .projects-grid, .feats-grid {
     width: 100%;
@@ -175,8 +175,8 @@ h1 {
   .project-image, .cert-image {
     max-width: 100%;
     min-width: 300px;
-    /* height: auto; */
-    height: 100px;
+    height: auto;
+    /* height: 100px; */
   }
 }
 
