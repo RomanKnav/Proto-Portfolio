@@ -165,14 +165,14 @@ h1 {
 
 /* FOR MOBILE */
 @media screen and (max-width: 600px) {
-  .projects-grid {
+  .projects-grid, .feats-grid {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
   }
 
-  .project-image {
+  .project-image, .cert-image {
     max-width: 100%;
     min-width: 300px;
     height: auto;
