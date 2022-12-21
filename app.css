@@ -32,7 +32,7 @@ body {
 .link { 
   text-decoration: underline;
   line-height: 22pt;
-  font-size: 90%;
+  font-size: 100%;
 } 
 
 .link:hover { 
