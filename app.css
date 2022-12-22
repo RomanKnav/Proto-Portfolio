@@ -32,10 +32,16 @@ body {
 .link { 
   text-decoration: underline;
   line-height: 22pt;
+  font-size: 90%;
+} 
+
+.text-link { 
+  text-decoration: underline;
+  line-height: 22pt;
   font-size: 100%;
 } 
 
-.link:hover { 
+.link:hover, .text-link:hover{ 
   color: #4b76db; 
 } /* CSS link hover */
 
@@ -51,7 +57,6 @@ nav ul {
   left: 0;
   width: 100%;
   background: var(--main-red);   
-  
   z-index: 10;
 } 
 .nav-list {
@@ -142,7 +147,7 @@ h1 {
   "margin-bottom: 6rem" determines the amount of space below the grid*/
 }
 
-.project {
+.project, .nav {
   background: var(--main-red);
   box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
   border-radius: 2px;
