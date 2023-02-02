@@ -295,7 +295,7 @@ h1 {
 }
 
 /* ABOUT IMAGE FOR MACBOOK */
-@media screen and (max-width:3000px) {   
+@media screen and (min-width:3000px) {   
   .about-image {
     width: 200px;
     height: 25%;
