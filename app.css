@@ -193,7 +193,7 @@ h1 {
 @media screen and (min-width: 3000px) {
   .projects-grid, .feats-grid {
     width: 100%;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin: 0 auto;
     margin-bottom: 6rem;
   }
