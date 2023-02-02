@@ -176,7 +176,7 @@ h1 {
 @media screen and (max-width: 600px) {
   .projects-grid, .feats-grid {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1280px;    /* WTF IS THIS FOR AGAIN??? */
     margin: 0 auto;
     margin-bottom: 6rem;
   }
@@ -185,6 +185,23 @@ h1 {
     max-width: 100%;
     min-width: 300px;
     height: auto;
+    /* height: 100px; */
+  }
+}
+
+/* PROJECT STUFF FOR MACBOOK */
+@media screen and (min-width: 3000px) {
+  .projects-grid, .feats-grid {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+  .project-image, .cert-image {
+    max-width: 100%;
+    min-width: 300px;
+    height: calc(100% - 5.8rem);
     /* height: 100px; */
   }
 }
