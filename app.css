@@ -314,7 +314,7 @@ figure {
 }
 
 /* PROJECT STUFF FOR MACBOOK */
-@media screen and (min-width: 3000px) {
+@media screen and (min-width: 1964px) {
   .projects-grid, .feats-grid {
     width: 100%;
     max-width: 1280px;
@@ -352,7 +352,7 @@ figure {
 }
 
 /* ABOUT IMAGE FOR MACBOOK */
-@media screen and (min-width:3000px) {   
+@media screen and (min-width:1964px) {   
   .about-image {
     display: block;
     margin-left: 20%;   /* Defines the space outside the element, on the right side. */
