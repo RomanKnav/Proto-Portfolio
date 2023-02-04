@@ -352,7 +352,7 @@ figure {
 }
 
 /* ABOUT IMAGE FOR MACBOOK */
-@media  only screen and (min-width:2900px) and (max-width: 4000px) {   
+@media  only screen and (min-width:1964px) and (max-width: 3025px) {   
   .about-image {
     display: block;
     margin-left: 20%;   /* Defines the space outside the element, on the right side. */
