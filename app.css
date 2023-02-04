@@ -222,19 +222,12 @@ h1 {
   border-bottom: 0.2rem solid var(--main-white);
   /*   Underlines the header with a white line */
 }
-/* .about-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-} */
+
 .about-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 24%;
-  /* height: 45%; */
-  /* height: 60%; */
   height: 600px;
 }
 
@@ -329,24 +322,33 @@ figure {
   }
 }
 
-/* MOBILE: if screen is less than 500px wide (my phone is 428). SUCCESS.*/
+/* NORMAL ABOUT */
+/* .about-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24%;
+  height: 600px;
+} */
+
+/* ABOUT FOR MOBILE: if screen is less than 500px wide (my phone is 428). SUCCESS.*/
 @media screen and (max-width:600px) {   
   .about-image {
-    width: 200px;
-    height: 33%;
     display: block;
     margin-left: 20%;   /* Defines the space outside the element, on the right side. */
-    margin-right: 20%;        
+    margin-right: 20%;  
+    width: 200px;
+    height: 33%;
   }
 }
 
 /* ABOUT IMAGE FOR MACBOOK */
 @media screen and (min-width:3000px) {   
   .about-image {
-    width: 200px;
-    height: 20%;
     display: block;
     margin-left: 20%;   /* Defines the space outside the element, on the right side. */
-    margin-right: 20%;        
+    margin-right: 20%;
+    width: 200px;
+    height: 20%;
   }
 }
