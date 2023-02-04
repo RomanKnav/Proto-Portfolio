@@ -77,15 +77,6 @@ a {
   color: var(--main-white);
 }
 
-/* NAV BAR FOR MOBILE */
-@media screen and (max-width: 600px) {
-  .nav-list a {    
-    display: block;
-    font-size: 16px;
-    padding: 1rem;
-  }   
-}
-
 h1,
 h2 {
   font-family: 'Raleway', sans-serif;
@@ -172,43 +163,6 @@ h1 {
   width: 100%;
 }
 
-/* PROJECT STUFF FOR MOBILE */
-@media screen and (max-width: 600px) {
-  .projects-grid, .feats-grid {
-    width: 100%;
-    max-width: 1280px;    /* WTF IS THIS FOR AGAIN??? */
-    margin: 0 auto;
-    margin-bottom: 6rem;
-  }
-
-  .project-image, .cert-image {
-    max-width: 100%;
-    min-width: 300px;
-    height: auto;
-    /* height: 100px; */
-  }
-}
-
-/* PROJECT STUFF FOR MACBOOK */
-@media screen and (min-width: 3000px) {
-  .projects-grid, .feats-grid {
-    width: 100%;
-
-    /* height: calc(100% - 5.8rem); */
-    /* max-width: 1280px; */
-    margin: 0 auto;
-    margin-bottom: 6rem;
-  }
-
-  .project-image, .cert-image {
-    max-width: 100%;
-    min-width: 300px;
-    /* height: calc(100% - 5.8rem); */
-    /* height: 300px; */
-    height: auto;
-  }
-}
-
 .project-title {
     font-size: 2rem;
     padding: 1rem 0.5rem;
@@ -284,29 +238,6 @@ h1 {
   height: 600px;
 }
 
-
-/* MOBILE: if screen is less than 500px wide (my phone is 428). SUCCESS.*/
-@media screen and (max-width:600px) {   
-  .about-image {
-    width: 200px;
-    height: 33%;
-    display: block;
-    margin-left: 20%;   /* Defines the space outside the element, on the right side. */
-    margin-right: 20%;        
-  }
-}
-
-/* ABOUT IMAGE FOR MACBOOK */
-@media screen and (min-width:3000px) {   
-  .about-image {
-    width: 200px;
-    height: 350px;
-    display: block;
-    margin-left: 20%;   /* Defines the space outside the element, on the right side. */
-    margin-right: 20%;        
-  }
-}
-
 section ul {
   display: table; 
   margin: 0 auto;
@@ -354,4 +285,68 @@ figure {
   "margin-bottom: 6rem" determines the amount of space below the grid*/
 }
 
+/* NAV BAR FOR MOBILE */
+@media screen and (max-width: 600px) {
+  .nav-list a {    
+    display: block;
+    font-size: 16px;
+    padding: 1rem;
+  }   
+}
 
+/* PROJECT STUFF FOR MOBILE */
+@media screen and (max-width: 600px) {
+  .projects-grid, .feats-grid {
+    width: 100%;
+    max-width: 1280px;    /* WTF IS THIS FOR AGAIN??? */
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+  .project-image, .cert-image {
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+    /* height: 100px; */
+  }
+}
+
+/* PROJECT STUFF FOR MACBOOK */
+@media screen and (min-width: 3000px) {
+  .projects-grid, .feats-grid {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+  .project-image, .cert-image {
+    max-width: 100%;
+    min-width: 300px;
+    /* height: calc(100% - 5.8rem); */
+    /* height: 300px; */
+    /* height: auto; */
+  }
+}
+
+/* MOBILE: if screen is less than 500px wide (my phone is 428). SUCCESS.*/
+@media screen and (max-width:600px) {   
+  .about-image {
+    width: 200px;
+    height: 33%;
+    display: block;
+    margin-left: 20%;   /* Defines the space outside the element, on the right side. */
+    margin-right: 20%;        
+  }
+}
+
+/* ABOUT IMAGE FOR MACBOOK */
+@media screen and (min-width:3000px) {   
+  .about-image {
+    width: 200px;
+    height: 20%;
+    display: block;
+    margin-left: 20%;   /* Defines the space outside the element, on the right side. */
+    margin-right: 20%;        
+  }
+}
