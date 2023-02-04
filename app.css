@@ -159,7 +159,7 @@ h1 {
 .cert-image {
   /* height: calc(100% - 5.8rem); */
   height: calc(100%);     
-  /* ^^^ hope this doesn't effect certs on mobile */
+  /* ^^^ hope this doesn't effect certs on mobile. NOPE??? */
   width: 100%;
 }
 
@@ -287,6 +287,15 @@ figure {
   }   
 }
 
+/* NORMAL PROJECT IMAGE */
+/* .project-image {
+  height: calc(100% - 5.8rem);
+  width: 100%;
+  /* "height: calc(100% - 5.8rem);" gives the images uniformity in their height and therefore the amount of background that they 
+  cover. width:100% ensures that the images take up the width of the screen, nothing more, nothing less. I wonder how its gets 
+  uniform spacing on both sides of the grid */
+
+
 /* PROJECT STUFF FOR MOBILE */
 @media screen and (max-width: 600px) {
   .projects-grid, .feats-grid {
@@ -331,7 +340,7 @@ figure {
   height: 600px;
 } */
 
-/* ABOUT FOR MOBILE: if screen is less than 500px wide (my phone is 428). SUCCESS.*/
+/* ABOUT IMG FOR MOBILE: if screen is less than 500px wide (my phone is 428). SUCCESS.*/
 @media screen and (max-width:600px) {   
   .about-image {
     display: block;
@@ -350,5 +359,10 @@ figure {
     margin-right: 20%;
     width: 200px;
     height: 20%;
+  }
+
+  .welcome-section, .about-section, .skills-section {
+    background-color: rgb(255, 0, 0);
+    background-image: linear-gradient(62deg, #0000ed 0%, #7900f3 100%);
   }
 }
