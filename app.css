@@ -193,6 +193,8 @@ h1 {
 @media screen and (min-width: 3000px) {
   .projects-grid, .feats-grid {
     width: 100%;
+
+    /* height: calc(100% - 5.8rem); */
     /* max-width: 1280px; */
     margin: 0 auto;
     margin-bottom: 6rem;
@@ -202,8 +204,8 @@ h1 {
     max-width: 100%;
     min-width: 300px;
     /* height: calc(100% - 5.8rem); */
-    height: 300px;
-    /* height: 100px; */
+    /* height: 300px; */
+    height: auto;
   }
 }
 
@@ -298,7 +300,7 @@ h1 {
 @media screen and (min-width:3000px) {   
   .about-image {
     width: 200px;
-    height: 30%;
+    height: 350px;
     display: block;
     margin-left: 20%;   /* Defines the space outside the element, on the right side. */
     margin-right: 20%;        
