@@ -77,6 +77,15 @@ a {
   color: var(--main-white);
 }
 
+/* NAV BAR FOR MOBILE */
+@media screen and (max-width: 600px) {
+  .nav-list a {    
+    display: block;
+    font-size: 16px;
+    padding: 1rem;
+  }   
+}
+
 h1,
 h2 {
   font-family: 'Raleway', sans-serif;
@@ -159,8 +168,42 @@ h1 {
 .cert-image {
   /* height: calc(100% - 5.8rem); */
   height: calc(100%);     
-  /* ^^^ hope this doesn't effect certs on mobile. NOPE??? */
+  /* ^^^ hope this doesn't effect certs on mobile */
   width: 100%;
+}
+
+/* PROJECT STUFF FOR MOBILE */
+@media screen and (max-width: 600px) {
+  .projects-grid, .feats-grid {
+    width: 100%;
+    max-width: 1280px;    /* WTF IS THIS FOR AGAIN??? */
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+  .project-image, .cert-image {
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+    /* height: 100px; */
+  }
+}
+
+/* PROJECT STUFF FOR MACBOOK */
+@media screen and (min-width: 3000px) {
+  .projects-grid, .feats-grid {
+    width: 100%;
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+  .project-image, .cert-image {
+    max-width: 100%;
+    min-width: 300px;
+    height: calc(100% - 5.8rem);
+    /* height: 100px; */
+  }
 }
 
 .project-title {
@@ -222,13 +265,32 @@ h1 {
   border-bottom: 0.2rem solid var(--main-white);
   /*   Underlines the header with a white line */
 }
-
+/* .about-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+} */
 .about-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 24%;
+  /* height: 45%; */
+  /* height: 60%; */
   height: 600px;
+}
+
+
+/* if screen is less than 500px wide (my phone is 428). SUCCESS.*/
+@media screen and (max-width:600px) {   
+  .about-image {
+    width: 200px;
+    height: 33%;
+    display: block;
+    margin-left: 20%;   /* Defines the space outside the element, on the right side. */
+    margin-right: 20%;        
+  }
 }
 
 section ul {
@@ -278,91 +340,4 @@ figure {
   "margin-bottom: 6rem" determines the amount of space below the grid*/
 }
 
-/* NAV BAR FOR MOBILE */
-@media screen and (max-width: 600px) {
-  .nav-list a {    
-    display: block;
-    font-size: 16px;
-    padding: 1rem;
-  }   
-}
 
-/* NORMAL PROJECT IMAGE */
-/* .project-image {
-  height: calc(100% - 5.8rem);
-  width: 100%;
-  /* "height: calc(100% - 5.8rem);" gives the images uniformity in their height and therefore the amount of background that they 
-  cover. width:100% ensures that the images take up the width of the screen, nothing more, nothing less. I wonder how its gets 
-  uniform spacing on both sides of the grid */
-
-
-/* PROJECT STUFF FOR MOBILE */
-@media screen and (max-width: 600px) {
-  .projects-grid, .feats-grid {
-    width: 100%;
-    max-width: 1280px;    /* WTF IS THIS FOR AGAIN??? */
-    margin: 0 auto;
-    margin-bottom: 6rem;
-  }
-
-  .project-image, .cert-image {
-    max-width: 100%;
-    min-width: 300px;
-    height: auto;
-    /* height: 100px; */
-  }
-}
-
-/* PROJECT STUFF FOR MACBOOK */
-@media screen and (min-width: 1964px) {
-  .projects-grid, .feats-grid {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
-  }
-
-  .project-image, .cert-image {
-    max-width: 100%;
-    min-width: 300px;
-    /* height: calc(100% - 5.8rem); */
-    /* height: 300px; */
-    /* height: auto; */
-  }
-}
-
-/* NORMAL ABOUT */
-/* .about-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 24%;
-  height: 600px;
-} */
-
-/* ABOUT IMG FOR MOBILE: if screen is less than 500px wide (my phone is 428). SUCCESS.*/
-@media screen and (max-width:600px) {   
-  .about-image {
-    display: block;
-    margin-left: 20%;   /* Defines the space outside the element, on the right side. */
-    margin-right: 20%;  
-    width: 200px;
-    height: 33%;
-  }
-}
-
-/* ABOUT IMAGE FOR MACBOOK. Resolution: 3024x1964 */
-@media screen and (min-width:1964px) and (max-width: 3025px) {   
-  .about-image {
-    display: block;
-    margin-left: 20%;   /* Defines the space outside the element, on the right side. */
-    margin-right: 20%;
-    width: 20%;
-    height: 200px;
-  }
-
-  .welcome-section, .about-section, .skills-section {
-    background-color: rgb(255, 0, 0);
-    background-image: linear-gradient(62deg, #0000ed 0%, #7900f3 100%);
-  }
-}
