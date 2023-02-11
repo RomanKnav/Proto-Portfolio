@@ -8,3 +8,5 @@ lil project to practice html and css
 * TODO: add media query for about image. --DONE
 * TODO: add shadow box to projects when hovered over. --DONE
 * TODO: add media query for macbooks (images too long on my mac)
+* TODO: add social media icons and move them to the left  of nav bar (use FONT AWSOME)
+* TODO: fix hangman's url (broke for no reason)
