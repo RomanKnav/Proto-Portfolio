@@ -13,7 +13,7 @@
 * {
   margin: 0;
   padding: 0;
-}
+} 
 
 html {
   box-sizing: border-box; 
@@ -100,7 +100,7 @@ a {
   }   
 }
 
-/* WELCOME SECTION STUFF: */
+/************************************* WELCOME SECTION STUFF: *************************************/
 .welcome-section {
   display: flex;
   flex-direction: column;
@@ -117,7 +117,7 @@ a {
   Original background is black, but that gets covered up by the background image (THIS STUFF MOVED ELSEWHERE) */
 }
 
-/* PROJECTS SECTION STUFF */
+/************************************* PROJECTS SECTION STUFF *************************************/
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
@@ -141,7 +141,9 @@ a {
   margin: 0 auto;
   margin-bottom: 6rem;
   /* gets the element with the "projects-grid" class (a div), and sets its display to "grid".  */
-  /* "grid-template-columns" basically determines the layout of all the columns. In this case, it uses auto-fit to fit any amount of squares on the screen, so long as they can fit. All the squares that cannot fit get pushed down to other columns. The squares can shrink down to a minimum of 320px, and a max of 1 fraction each.
+  /* "grid-template-columns" basically determines the layout of all the columns. In this case, it uses auto-fit 
+  to fit any amount of squares on the screen, so long as they can fit. All the squares that cannot fit get pushed 
+  down to other columns. The squares can shrink down to a minimum of 320px, and a max of 1 fraction each.
   "width: 100%" makes sure the columns take up the entire width of the screen 
   "margin-bottom: 6rem" determines the amount of space below the grid*/
 }
@@ -281,6 +283,9 @@ a {
   height: 600px;
 }
 
+.about-section p {
+  text-align: center;
+}
 
 /* if screen is less than 500px wide (my phone is 428). SUCCESS.*/
 @media screen and (max-width:600px) {   
@@ -293,12 +298,23 @@ a {
   }
 }
 
+/* TODO: MEDIA QUERY FOR MACBOOK */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
+screen and (min-device-pixel-ratio : 1.5) { 
+  /* add spacing for the macbook h3 titles */
+  .about-image {
+    width: 25%;
+    height: 500px;   
+    padding: 50px;  
+    /* box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);  */
+  }
+}
 section ul {
   display: table; 
   margin: 0 auto;
   text-align: left;
 }
-
+/*  CENTERS THE IMAGE CAPTION  */
 figure {
   text-align: center;
   font-style: italic;
@@ -306,7 +322,7 @@ figure {
   text-indent: 0;
   margin: 0.5em;
   padding: 0.5em;
-/*  CENTERS THE IMAGE CAPTION  */
+
 }
 
 /* ACCOMPLISHMENTS STUFF  */
@@ -335,7 +351,10 @@ figure {
   margin: 0 auto;
   /* margin-bottom: 6rem; */
   /* gets the element with the "projects-grid" class (a div), and sets its display to "grid".  
-  /* "grid-template-columns" basically determines the layout of all the columns. In this case, it uses auto-fit to fit any amount of squares on the screen, so long as they can fit. All the squares that cannot fit get pushed down to other columns. The squares can shrink down to a minimum of 320px, and a max of 1 fraction each.
+  /* "grid-template-columns" basically determines the layout of all the columns. In this case, it 
+  uses auto-fit to fit any amount of squares on the screen, so long as they can fit. All the squares 
+  that cannot fit get pushed down to other columns. The squares can shrink down to a minimum of 320px, 
+  and a max of 1 fraction each.
   "width: 100%" makes sure the columns take up the entire width of the screen 
   "margin-bottom: 6rem" determines the amount of space below the grid*/
 }
