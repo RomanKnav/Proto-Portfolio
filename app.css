@@ -1,6 +1,6 @@
 @viewport {
-  width: device-width ;
-  zoom: 1.0 ;
+  width: device-width;
+  zoom: 1.0;
 } 
 
 :root {
@@ -82,7 +82,7 @@ nav ul {
 .nav-list a {    
   display: block;
   font-size: 2.2rem;
-  padding: 2rem;
+  padding: 2rem;      /* 2rem means "2x the browser's font size" */
 }   
 .nav-list a:hover {
   background: var(--main-blue);
@@ -95,7 +95,7 @@ a {
 @media screen and (max-width: 600px) {
   .nav-list a {    
     display: block;
-    font-size: 16px;
+    font-size: 15px;
     padding: 1rem;
   }   
 }
