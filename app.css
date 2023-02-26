@@ -306,10 +306,12 @@ screen and (min-device-pixel-ratio : 1.5) {
     padding: 50px;  
   }
 } */
-@media screen and (min-width: 1440px) {
+
+/* OLD MACBOOK MEDIA QUERY DON'T WORK. HAVE TO USE THIS ONE: */
+@media screen and (min-width: 1440px), only screen and (min-device-pixel-ratio : 1.5) {
   .about-section figure img {
     width: 25%;
-    height: 200px;   
+    height: 400px;   
     padding: 50px;  
   }
 }
