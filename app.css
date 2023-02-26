@@ -282,7 +282,6 @@ a {
   /* height: 60%; */
   height: 600px;
 }
-
 .about-section p {
   text-align: center;
 }
@@ -299,16 +298,24 @@ a {
 }
 
 /* TODO: MEDIA QUERY FOR MACBOOK */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
+/* add spacing for the macbook h3 titles */
+/* @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
 screen and (min-device-pixel-ratio : 1.5) { 
-  /* add spacing for the macbook h3 titles */
   .about-image {
     width: 25%;
     height: 500px;   
     padding: 50px;  
-    /* box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);  */
+  }
+} */
+@media screen and (min-width: 3000px) {
+  .about-image {
+    width: 25%;
+    height: 300px;   
+    padding: 50px;  
   }
 }
+
+
 section ul {
   display: table; 
   margin: 0 auto;
