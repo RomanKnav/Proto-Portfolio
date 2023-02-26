@@ -298,11 +298,11 @@ a {
 
 /* TODO: MEDIA QUERY FOR MACBOOK */
 /* add spacing for the macbook h3 titles */
-/* @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
 screen and (min-device-pixel-ratio : 1.5) { 
   .about-image {
     width: 25%;
-    height: 500px;   
+    height: 200px;   
     padding: 50px;  
   }
 } */
@@ -314,7 +314,7 @@ screen and (min-device-pixel-ratio : 1.5) {
     height: 400px;   
     padding: 50px;  
   }
-}
+} */
 
 
 section ul {
