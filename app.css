@@ -46,13 +46,19 @@ body {
 } /* CSS link hover */
 
 /*************************************MACRO*************************************/
-h1,
 h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   text-align: center;
+
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
 }
 h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
   font-size: 6rem;
 }
 .welcome-section, .about-section, .skills-section {
@@ -238,27 +244,12 @@ a {
   background-color: var(--main-green);
 }
 
-/* SKILLS STUFF */
-.skills-section {
-  margin: 0 auto 6rem auto;
-  margin: 0 auto;
-  padding: 10rem 2rem;
- 
-}
-.skills-section p {
-  text-align: center;
-  max-width: 140px;
-  margin: 0 auto 3rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
-}
-
-/*  ABOUT ME STUFF */
+/****************************  ABOUT SECTION ****************************/
 .about-section {
     margin: 0 auto 6rem auto;
     margin: 0 auto;
     padding: 10rem 2rem;
-    /*margin-bottom: 6rem;
-    padding: 10rem 5rem; */
+    text-align: center;
 }
 .about-section-header , .feats-section-header, .skills-section-header {
   max-width: 640px;
@@ -266,12 +257,6 @@ a {
   border-bottom: 0.2rem solid var(--main-white);
   /*   Underlines the header with a white line */
 }
-/* .about-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-} */
 .about-image {
   display: block;
   margin-left: auto;
@@ -279,12 +264,8 @@ a {
   width: 24%;
   /* height: 45%; */
   /* height: 60%; */
-  height: 600px;
+  height: 800px;
 }
-.about-section p {
-  text-align: center;
-}
-
 /* if screen is less than 500px wide (my phone is 428). SUCCESS.*/
 @media screen and (max-width:600px) {   
   .about-image {
@@ -296,32 +277,26 @@ a {
   }
 }
 
-/* TODO: MEDIA QUERY FOR MACBOOK */
-/* add spacing for the macbook h3 titles */
-/* @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
-screen and (min-device-pixel-ratio : 1.5) { 
-  .about-image {
-    width: 25%;
-    height: 200px;   
-    padding: 50px;  
-  }
-} */
-
-/* OLD MACBOOK MEDIA QUERY DON'T WORK. HAVE TO USE THIS ONE: */
+/* OLD MACBOOK MEDIA QUERY DON'T WORK. HAVE TO USE THIS ONE. YES THIS ACTUALLY WORKS FOR THE MACBOOK: */
 @media screen and (min-width: 1440px), only screen and (min-device-pixel-ratio : 1.5) {
   .about-section figure img {
     width: 25%;
-    height: 400px;   
-    padding: 50px;  
+    /* height: 400px;    */
+    height: 60%;   
+    margin-bottom: 1%
   }
-} */
+  .about-section figure {
+    padding: 50px;
+  }
+}
 
-
-section ul {
+/* WTF IS THIS FOR AGAIN??? */
+/* section ul {
   display: table; 
   margin: 0 auto;
   text-align: left;
-}
+} */
+
 /*  CENTERS THE IMAGE CAPTION  */
 figure {
   text-align: center;
@@ -367,4 +342,25 @@ figure {
   "margin-bottom: 6rem" determines the amount of space below the grid*/
 }
 
+/* SKILLS STUFF */
+.skills-section {
+  margin: 0 auto 6rem auto;
+  margin: 0 auto;
+  padding: 10rem 2rem;
+}
+.skills-section p {
+  /* max-width: 140px;
+  margin: 0 auto 3rem auto;
+  border-bottom: 0.2rem solid var(--main-white); */
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+}
 
+/* FOR THE BULLET POINTS IN BOTH SKILL AND ABOUT SECTION */
+section ul {
+  display: table; 
+  margin: 0 auto;
+  text-align: left;
+}
