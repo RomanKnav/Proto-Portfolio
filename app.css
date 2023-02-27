@@ -5,10 +5,9 @@
 
 :root {
   --main-white: #f0f0f0;
-  --main-red: #e5ab16;
-  --second-red: #e8c468; 
-  --main-blue: #56932f;
-  --main-gray: #000000;
+  --main-yellow: #e5ab16;
+  --second-yellow: #e8c468; 
+  --main-green: #56932f;
  } 
 * {
   margin: 0;
@@ -82,7 +81,7 @@ nav ul {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-red);   
+  background: var(--main-yellow);   
   z-index: 10;
 } 
 .nav-list-r {
@@ -95,7 +94,7 @@ nav ul {
   padding: 2rem;      /* 2rem means "2x the browser's font size" */
 }   
 .nav-list-r a:hover {
-  background: var(--main-blue);
+  background: var(--main-green);
 } 
 /* NAV BAR FOR MOBILE */
 @media screen and (max-width: 600px) {
@@ -127,7 +126,7 @@ nav ul {
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--main-blue);
+  background: var(--main-green);
 }
 
 .projects-section-header {
@@ -155,13 +154,13 @@ nav ul {
 }
 
 .project, .nav {
-  background: var(--main-red);
+  background: var(--main-yellow);
   box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
   border-radius: 2px;
 }
 
 .active, .project:hover {
-  background-color: var(--second-red); 
+  background-color: var(--second-yellow); 
 }
 
 .project-image {
@@ -221,7 +220,7 @@ nav ul {
 /* COLLAPSIBLE STUFF */
 .collapsible {
   box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
-  background-color: var(--main-red);
+  background-color: var(--main-yellow);
   color: var(--main-white);
   cursor: pointer;
   padding: 18px;
@@ -234,7 +233,7 @@ nav ul {
 }
 .active, .collapsible:hover {
   /* background-color: #e8c468; */
-  background-color: var(--second-red)
+  background-color: var(--second-yellow)
 }
 .content {
   padding: 0 18px;
@@ -257,23 +256,25 @@ nav ul {
   border-bottom: 0.2rem solid var(--main-white);
   /*   Underlines the header with a white line */
 }
+/* DONT FUCKING MOD */
 .about-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 24%;
+  width: 50%;
   /* height: 45%; */
   /* height: 60%; */
-  height: 50px;
+  height: 800px;
 }
-/* if screen is less than 500px wide (my phone is 428). SUCCESS.*/
-@media screen and (max-width:600px) {   
+/* if screen is less than 500px wide (my phone is 428x). SUCCESS.*/
+@media screen and (max-width:500px) {   
   .about-image {
-    width: 200px;
-    height: 33%;
     display: block;
-    margin-left: 20%;   /* Defines the space outside the element, on the right side. */
-    margin-right: 20%;        
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 60%; */
+    width: 50%;
+    height: 20%;
   }
 }
 
@@ -312,7 +313,7 @@ figure {
 .feats-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--main-blue);
+  background: var(--main-green);
   /* aligns eveything in the middle of the page, with 20rem and 2rem vertical and horizontal padding. */
   /* box-shadow: 1px 1px 2px rgb(0 0 0 / 50%); */
 }
