@@ -250,6 +250,7 @@ nav ul {
 
 /****************************  ABOUT SECTION ****************************/
 .about-section {
+
     margin: 0 auto 6rem auto;
     margin: 0 auto;
     padding: 10rem 2rem;
@@ -263,12 +264,12 @@ nav ul {
 }
 /* DONT FUCKING MOD */
 .about-image {
-  display: block;
+  /* display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 50%; */
   /* height: 45%; */
-  /* height: 60%; */
+  height: 60%; 
   height: 800px;
 }
 /* if screen is less than 500px wide (my phone is 428x). SUCCESS.*/
