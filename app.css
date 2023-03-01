@@ -255,6 +255,7 @@ a {
 
 /*  ABOUT ME STUFF */
 .about-section {
+
     margin: 0 auto 6rem auto;
     margin: 0 auto;
     padding: 10rem 2rem;
@@ -274,12 +275,12 @@ a {
   width: 40%;
 } */
 .about-image {
-  display: block;
+  /* display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 24%;
+  width: 24%; */
   /* height: 45%; */
-  /* height: 60%; */
+  height: 60%; 
   height: 600px;
 }
 .about-section p {
@@ -299,14 +300,14 @@ a {
 
 /* TODO: MEDIA QUERY FOR MACBOOK */
 /* add spacing for the macbook h3 titles */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
+/* @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
 screen and (min-device-pixel-ratio : 1.5) { 
   .about-image {
     width: 25%;
     height: 200px;   
     padding: 50px;  
   }
-}
+} */
 /* @media screen and (min-width: 1440px) {
   .about-section figure img {
     width: 25%;
