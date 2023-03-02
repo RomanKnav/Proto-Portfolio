@@ -112,13 +112,13 @@ nav ul {
   #nav-list-l a {
     display: flex;
     padding: 0.5rem;
+    /* YES, THIS FIXES PADDING REGARDLESS OF THE MOBILE SIZE. */
+    padding-top: 60%;
   }
   .fa {
     /* font-size: 2xs; */
-    font-size: 10px;
-    
+    font-size: 10px; 
   }
-
 }
 
 /************************************* WELCOME SECTION STUFF: *************************************/
