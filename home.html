@@ -49,6 +49,9 @@
       <li>
         <a href="#skills-section">Skills</a>
       </li>
+      <li>
+        <a href="#writing-section">Writing</a>
+      </li>
     </ul>
   </nav>
 
@@ -247,7 +250,7 @@
         var coll = document.getElementsByClassName("collapsible");
         var i;
         
-        for (i = 0; i < coll.length; i++) {
+        for (i = 0; i < coll.length; i++) { 
           coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
@@ -346,6 +349,66 @@
       <li>Express.js</li>
     </ul>
   </section>
+
+  <!-- TODO: MAKE THESE DOCUMENTS DOWNLOADABLE, INSTEAD OF TAKING USERS TO DIFFERENT URL.
+  ALSO, WHEN HOVERED OVER, SHOW A "DOWNLOAD" MESSAGE -->
+  <section id="writing-section" class="writing-section">
+    <h2 class="feats-section-header">Writing</h2>
+    <div class=feats-grid>
+      <!-- Genocide -->
+      <a href=https://docs.google.com/document/d/1JfUz-3Iam4TmNBU9LlKSf3JW2XsOSuzIPxKla_uMDyI/
+        target="_blank"
+        class="cert cert-tile">
+        <img class="cert-image"
+          src="https://i.imgur.com/f6CAwmy.png"
+          alt="project"
+        />
+      </a>
+
+      <!-- Genocide II -->
+      <a href=https://docs.google.com/document/d/1S2FTYhXmdM3j0VvQ5e0cKo4ADPDbHr4aW-q2vdKcpmE/edit#heading=h.ghnvjei91eam
+        target="_blank"
+        class="cert cert-tile">
+        <img class="cert-image"
+          src="https://i.imgur.com/RuYdCwd.png"
+          alt="project"
+        />
+      </a>
+
+      <!-- Gustav -->
+      <a href=https://docs.google.com/document/d/1ctd8nhokyj09FjnUI_8VD6m85rDv5NX7rzqQQvbeu8s/edit
+        target="_blank"
+        class="cert cert-tile">
+        <img class="cert-image"
+          src="https://i.imgur.com/pEMoVlU.png"
+          alt="project"
+        />
+      </a>
+
+      <!-- Jambalaya -->
+      <a href=https://docs.google.com/document/d/1aVCToPpQfHgA_pPxhAuI7keiAP0mVLhfIzmqe7tMdiE/edit
+        target="_blank"
+        class="cert cert-tile">
+        <img class="cert-image"
+          src="https://i.imgur.com/Koo2gVI.png?2"
+          alt="project"
+        />
+      </a>
+
+      <!-- James Harden -->
+      <a href=https://docs.google.com/document/d/1JfUz-3Iam4TmNBU9LlKSf3JW2XsOSuzIPxKla_uMDyI/
+        target="_blank"
+        class="cert cert-tile">
+        <img class="cert-image"
+          src="https://i.imgur.com/GWa9Day.png?2"
+          alt="project"
+        />
+      </a>
+
+    </div>
+  </section>
+
+  <!-- APPLIES CSS TO ENTIRE WEBSITE -->
   <link href="app.css" rel="stylesheet" type="text/css"
 </div>
 </html>

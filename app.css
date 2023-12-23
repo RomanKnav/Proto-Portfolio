@@ -261,7 +261,6 @@ nav ul {
 
 /****************************  ABOUT SECTION ****************************/
 .about-section {
-
     margin: 0 auto 6rem auto;
     margin: 0 auto;
     padding: 10rem 2rem;
@@ -327,7 +326,7 @@ figure {
 }
 
 /* ACCOMPLISHMENTS STUFF  */
-.feats-section {
+.feats-section, .writing-section {
   text-align: center;
   padding: 10rem 2rem;
   background: var(--main-green);
