@@ -196,7 +196,7 @@ nav ul {
 
 /* PROJECT STUFF FOR MOBILE */
 @media screen and (max-width: 600px) {
-  .projects-grid, .feats-grid {
+  .projects-grid, .feats-grid, .writing-grid {
     width: 100%;
     max-width: 1280px;    /* WTF IS THIS FOR AGAIN??? */
     margin: 0 auto;
@@ -213,7 +213,7 @@ nav ul {
 
 /* PROJECT STUFF FOR MACBOOK */
 @media screen and (min-width: 3000px) {
-  .projects-grid, .feats-grid {
+  .projects-grid, .feats-grid, .writing-grid{
     width: 100%;
     /* max-width: 1280px; */
     margin: 0 auto;
@@ -337,12 +337,12 @@ figure {
 /* .active, .collapsible:hover {
   background-color: #e8c468;
 } */
-.feats-grid a:hover {
+.feats-grid a:hover, .writing-grid a:hover {
   /* box-shadow: 1px 1px 2px rgb(0 0 0 / 50%); */
   box-shadow: 5px 5px 7px rgb(0 0 0 / 50%);
 }
 
-.feats-grid {
+.feats-grid, a:hover, .writing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
@@ -380,4 +380,9 @@ section ul {
   display: table; 
   margin: 0 auto;
   text-align: left;
+}
+
+/* WRITING SECTION */
+.writing-grid a {
+  border: 5px solid #000000;
 }
