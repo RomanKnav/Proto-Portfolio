@@ -49,9 +49,6 @@
       <li>
         <a href="#skills-section">Skills</a>
       </li>
-      <li>
-        <a href="#writing-section">Writing</a>
-      </li>
     </ul>
   </nav>
 
@@ -250,7 +247,7 @@
         var coll = document.getElementsByClassName("collapsible");
         var i;
         
-        for (i = 0; i < coll.length; i++) { 
+        for (i = 0; i < coll.length; i++) {
           coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
@@ -350,11 +347,9 @@
     </ul>
   </section>
 
-  <!-- TODO: MAKE THESE DOCUMENTS DOWNLOADABLE, INSTEAD OF TAKING USERS TO DIFFERENT URL.
-  ALSO, WHEN HOVERED OVER, SHOW A "DOWNLOAD" MESSAGE -->
-  <section id="writing-section" class="writing-section">
-    <h2 class="writing-section-header">Writing</h2>
-    <div class=writing-grid>
+  <section id="feats-section" class="feats-section">
+    <h2 class="feats-section-header">feats</h2>
+    <div class=feats-grid>
       <!-- Genocide -->
       <a href=https://docs.google.com/document/d/1JfUz-3Iam4TmNBU9LlKSf3JW2XsOSuzIPxKla_uMDyI/
         target="_blank"
@@ -408,7 +403,6 @@
     </div>
   </section>
 
-  <!-- APPLIES CSS TO ENTIRE WEBSITE -->
   <link href="app.css" rel="stylesheet" type="text/css"
 </div>
 </html>
