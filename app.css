@@ -386,3 +386,105 @@ section ul {
   margin: 0 auto;
   text-align: left;
 }
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 100px 0;
+  background-color: var(--dark-gray);
+  color: var(--white-russian);
+} 
+.footer h4 {
+  font-size: 25px;
+  padding-bottom: 1%;
+}
+.footer ul {
+  /* lol gotta use this width shit just to center the horizontal line. Primitive  */
+  width: 50%;
+  /* transform: translate(-50%, -50%);
+  text-align: center; */
+  list-style-type: none;
+  display: table;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  /* left: 50%; */
+  padding-bottom: 1%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
+screen and (min-device-pixel-ratio : 1.5) { 
+  .footer ul {
+    /* lol gotta use this width shit just to center the horizontal line. Primitive  */
+    width: 80%;
+    list-style-type: none;
+    /* display: table; */
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    padding-bottom: 1%;
+  }
+}
+.footer ul li {
+  padding: 35px;
+  display: table-cell;
+  font-size: 18px;
+}
+.footer ul li a {
+  padding: 35px;
+  color: var(--white-russian);
+  font-size: 18px;
+  text-decoration: underline;
+}
+.footer ul li a:hover { 
+  color: #4b76db; 
+} /* CSS link hover */
+.footer p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 500px) { 
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    background-color: var(--dark-gray);
+    color: var(--white-russian);
+  } 
+  .footer h4 {
+    font-size: 20px;
+    padding-bottom: 1%;
+  }
+  .footer ul {
+    /* lol gotta use this width shit just to center the horizontal line. Primitive  */
+    /* width: 100%;
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 1%;
+
+    width: 80%;
+    list-style-type: none;
+    text-align: center;
+    left: 50%;
+    padding-bottom: 1%; */
+
+    list-style-position: outside;
+    left: 10%;
+    /* display: flex; */
+  }
+  .footer ul li {
+    font-size: 10px;
+  }
+  .footer ul li a {
+    padding: 35px;
+    color: var(--white-russian);
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  .fa {
+    font-size: 15px;
+  }
+}
