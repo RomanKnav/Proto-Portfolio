@@ -391,9 +391,9 @@ section ul {
 .footer {
   width: 100%;
   text-align: center;
-  padding: 100px 0;
-  background-color: var(--dark-gray);
-  color: var(--white-russian);
+  padding: 50px 0;
+  background-color: #3c3b3b;
+  /* color: var(--white-russian); */
 } 
 .footer h4 {
   font-size: 25px;
@@ -426,6 +426,7 @@ screen and (min-device-pixel-ratio : 1.5) {
     padding: 0;
     left: 50%;
     padding-bottom: 1%;
+    background-color: var(--dark-gray);
   }
 }
 .footer ul li {
