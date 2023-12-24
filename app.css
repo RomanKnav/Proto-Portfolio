@@ -196,7 +196,7 @@ nav ul {
 
 /* PROJECT STUFF FOR MOBILE */
 @media screen and (max-width: 600px) {
-  .projects-grid, .feats-grid {
+  .projects-grid, .feats-grid, .writing-grid {
     width: 100%;
     max-width: 1280px;    /* WTF IS THIS FOR AGAIN??? */
     margin: 0 auto;
@@ -327,7 +327,7 @@ figure {
 }
 
 /* ACCOMPLISHMENTS STUFF  */
-.feats-section {
+.feats-section, .writing-section {
   text-align: center;
   padding: 10rem 2rem;
   background: var(--main-green);
