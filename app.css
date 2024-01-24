@@ -108,15 +108,14 @@ nav ul {
   #nav-list-r a {    
     /* for the section links */
     display: block;
-    /* display: flex; */
-    /* originally 10 */
-    font-size: 9px;    
+    font-size: 14px;    
     padding: 1rem;
   }   
   #nav-list-l a {
     /* for the icons */
     display: flex;
     padding: 0.5rem;
+    align-items: center;
     /* YES, THIS FIXES PADDING REGARDLESS OF THE MOBILE SIZE. */
     /* padding-top: 60%; */
   }
