@@ -78,10 +78,12 @@ nav ul {
   display: flex;
   justify-content: space-between;
   position: fixed;
+  /* what's top/left for? */
   top: 0;
   left: 0;
   width: 100%;
   background: var(--main-yellow);   
+  max-width: 100%;
   /* z-index: 10; */
 } 
 #nav-list-l {
@@ -116,23 +118,12 @@ nav ul {
     display: flex;
     padding: 0.5rem;
     /* YES, THIS FIXES PADDING REGARDLESS OF THE MOBILE SIZE. */
-    padding-top: 60%;
+    /* padding-top: 60%; */
   }
   .fa {
     /* font-size: 2xs; */
     font-size: 10px; 
   }
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: 100%;
-    background: var(--main-yellow);   
-    /* z-index: 10; */
-  } 
 }
 
 /************************************* WELCOME SECTION STUFF: *************************************/
