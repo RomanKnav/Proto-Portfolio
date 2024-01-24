@@ -106,7 +106,8 @@ nav ul {
   #nav-list-r a {    
     display: block;
     /* display: flex; */
-    font-size: 10px;
+    /* originally 10 */
+    font-size: 9px;    
     padding: 1rem;
   }   
   #nav-list-l a {
@@ -267,7 +268,7 @@ nav ul {
     padding: 10rem 2rem;
     text-align: center;
 }
-.about-section-header , .feats-section-header, .skills-section-header {
+.about-section-header , .feats-section-header, .skills-section-header, .writing-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(--main-white);
