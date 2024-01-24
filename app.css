@@ -78,6 +78,8 @@ a {
 nav ul {
   /* what's this for? Removes the bullet points from the navbar items */
   list-style: none; 
+  margin: 0;
+  padding: 0;
 }
 .nav {
   display: flex;
@@ -91,19 +93,18 @@ nav ul {
   max-width: 100%;
   /* z-index: 10; */
 } 
-#nav-list-l {
-  display: flex; 
-  margin-right: 2rem;
+
+#nav-list-l,
+#nav-list-r {
+  display: flex;
+  align-items: center;
 }
 
-#nav-list-r {
-  display: flex; 
-  margin-right: 2rem;
-}
 #nav-list-r a, #nav-list-l a {    
-  display: block;
+  display: flex;
   font-size: 2.2rem;
   padding: 2rem;      /* 2rem means "2x the browser's font size" */
+  align-items: center;
 }   
 #nav-list-r a:hover {
   background: var(--main-green);
@@ -112,21 +113,19 @@ nav ul {
 @media screen and (max-width: 600px) {
   #nav-list-r a {    
     /* for the section links */
-    display: block;
     font-size: 14px;    
     padding: 1rem;
   }   
   #nav-list-l a {
     /* for the icons */
-    display: flex;
     padding: 0.5rem;
-    align-items: center;
+    font-size: 14px;
     /* YES, THIS FIXES PADDING REGARDLESS OF THE MOBILE SIZE. */
     /* padding-top: 60%; */
   }
   .fa {
     /* font-size: 2xs; */
-    font-size: 10px; 
+    font-size: 14px; 
   }
 }
 
