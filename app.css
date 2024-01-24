@@ -104,6 +104,7 @@ nav ul {
 /* NAV BAR FOR MOBILE */
 @media screen and (max-width: 600px) {
   #nav-list-r a {    
+    /* for the section links */
     display: block;
     /* display: flex; */
     /* originally 10 */
@@ -111,6 +112,7 @@ nav ul {
     padding: 1rem;
   }   
   #nav-list-l a {
+    /* for the icons */
     display: flex;
     padding: 0.5rem;
     /* YES, THIS FIXES PADDING REGARDLESS OF THE MOBILE SIZE. */
@@ -120,6 +122,16 @@ nav ul {
     /* font-size: 2xs; */
     font-size: 10px; 
   }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-yellow);   
+    /* z-index: 10; */
+  } 
 }
 
 /************************************* WELCOME SECTION STUFF: *************************************/
