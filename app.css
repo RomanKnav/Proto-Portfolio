@@ -69,6 +69,11 @@ a {
   color: var(--main-white);
 }
 
+.webpage {
+  width: 100%; /* Adjust as needed */
+  max-width: 100%; /* Ensure it doesn't exceed the screen width */
+}
+
 /*************************************NAVBAR SHIT*************************************/
 nav ul {
   /* what's this for? Removes the bullet points from the navbar items */
