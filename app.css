@@ -445,7 +445,6 @@ screen and (min-device-pixel-ratio : 1.5) {
   padding: 35px;
   color: var(--white-russian);
   font-size: 18px;
-  text-decoration: underline;
 }
 .footer ul li a:hover { 
   color: #4b76db; 
@@ -469,20 +468,29 @@ screen and (min-device-pixel-ratio : 1.5) {
   .footer ul {
     list-style: none;
     padding: 0;
+    /* Wrap items to the next line if there's not enough space */
+    display: flex;
+    flex-wrap: wrap;
   }
+
+  .footer .contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer .icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
   .footer ul li {
-    font-size: 10px;
-    /* padding: 1px; */
+    display: table-cell;
+    font-size: 18px;
     padding: 2rem;
   }
-  /*  THIS IS FOR THE BOOTSTRAP ICONS */
-  .footer ul li a {
-    padding: 15px;
-    color: var(--white-russian);
-    /* font-size: 35px; */
-    text-decoration: underline;
-  }
-  .fa {
-    font-size: 15px;
-  }
 }
+/* TODO: MAKE ALL THE FOOTER SHIT STACKED ON MOBILE */
