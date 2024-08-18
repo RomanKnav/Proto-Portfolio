@@ -405,7 +405,7 @@ figure {
 
 /* Here's what causes borders on writing panels */
 .writing-grid a {
-  border: 5px solid #000000;
+  /* border: 5px solid #000000; */
   background-color: #ffffff; /* White background */
 }
 
