@@ -347,12 +347,12 @@ figure {
   box-shadow: 5px 5px 7px rgb(0 0 0 / 50%);
 }
 
-.feats-grid, .writing-grid {
+.feats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
   width: 100%;
-  max-width: 1280px;    /* this is  */
+  max-width: 1280px;
   margin: 0 auto;
   /* margin-bottom: 6rem; */
   /* gets the element with the "projects-grid" class (a div), and sets its display to "grid".  
@@ -362,6 +362,29 @@ figure {
   and a max of 1 fraction each.
   "width: 100%" makes sure the columns take up the entire width of the screen 
   "margin-bottom: 6rem" determines the amount of space below the grid*/
+}
+
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 3rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  /* gets the element with the "projects-grid" class (a div), and sets its display to "grid".  
+  /* "grid-template-columns" basically determines the layout of all the columns. In this case, it 
+  uses auto-fit to fit any amount of squares on the screen, so long as they can fit. All the squares 
+  that cannot fit get pushed down to other columns. The squares can shrink down to a minimum of 320px, 
+  and a max of 1 fraction each.
+  "width: 100%" makes sure the columns take up the entire width of the screen 
+  "margin-bottom: 6rem" determines the amount of space below the grid*/
+}
+
+.writing-grid img {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures images don’t have extra space at the bottom */
 }
 
 /* SKILLS STUFF */
@@ -380,6 +403,7 @@ figure {
   border-bottom: 0.2rem solid var(--main-white);
 }
 
+/* Here's what causes borders on writing panels */
 .writing-grid a {
   border: 5px solid #000000;
 }
