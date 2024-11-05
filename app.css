@@ -56,10 +56,15 @@ h1 {
   text-align: center;
   font-size: 6rem;
 }
-.welcome-section, .about-section, .skills-section {
+.welcome-section, .projects-section, .feats-section, .writing-section {
   background-color: rgb(0, 0, 0);
   background-image: linear-gradient(62deg, #444445 0%, #333234 100%);
 }
+
+.sheephunt-section, .about-section, .skills-section, .footer {
+  background-color: var(--main-green);
+}
+
 a {
   text-decoration: none;
   color: var(--main-white);
@@ -142,11 +147,17 @@ nav ul {
   Original background is black, but that gets covered up by the background image (THIS STUFF MOVED ELSEWHERE) */
 }
 
+.sheephunt-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-green);
+}
+
 /************************************* PROJECTS SECTION STUFF *************************************/
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--main-green);
+  background: var(--);
 }
 
 .projects-section-header {
@@ -334,7 +345,7 @@ figure {
 .feats-section, .writing-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--main-green);
+  /* background: var(--main-green); */
   /* aligns eveything in the middle of the page, with 20rem and 2rem vertical and horizontal padding. */
   /* box-shadow: 1px 1px 2px rgb(0 0 0 / 50%); */
 }
@@ -404,6 +415,7 @@ figure {
 }
 
 /* Here's what causes borders on writing panels */
+/* wtf is this again? */
 .writing-grid a {
   /* border: 5px solid #000000; */
   background-color: #ffffff; /* White background */
@@ -421,8 +433,7 @@ section ul {
   width: 100%;
   text-align: center;
   padding: 50px 0;
-  background-color: #3c3b3b;
-  /* color: var(--white-russian); */
+  /* background-color: #3c3b3b; */
 } 
 .footer h4 {
   font-size: 25px;
