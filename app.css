@@ -65,6 +65,17 @@ h1 {
   background-color: var(--main-green);
 }
 
+/* #game {
+  /* border: none; padding: 5rem;  */
+  /* border-image-source: repeating-linear-gradient(15deg, #900000, #ee2400, #ffb09c 2rem); */
+  /* border-width: 2rem;
+  border-color: grey;
+  border-image-source: repeating-linear-gradient(15deg,#900000,#ee2400,#ffb09c 2rem);
+  border-image-repeat: stretch;
+  border-image-slice: 100 75; */
+
+
+
 a {
   text-decoration: none;
   color: var(--main-white);
@@ -149,15 +160,18 @@ nav ul {
 
 .sheephunt-section {
   text-align: center;
+  /*background: var(--main-green); */
+}
+
+#game {
+  border: none;
   padding: 10rem 2rem;
-  background: var(--main-green);
 }
 
 /************************************* PROJECTS SECTION STUFF *************************************/
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--);
 }
 
 .projects-section-header {
