@@ -63,8 +63,12 @@ h1 {
   background-image: linear-gradient(62deg, #444445 0%, #333234 100%);
 }
 
-.sheephunt-section, .about-section, .skills-section, .footer {
+.about-section, .skills-section, .footer {
   background-color: var(--main-green);
+}
+
+.sheephunt-section {
+  background-color: green;
 }
 
 a {
@@ -94,7 +98,7 @@ nav ul {
   width: 100%;
   background: var(--main-yellow);   
   max-width: 100%;
-  /* z-index: 10; */
+  z-index: 10;
 } 
 
 #nav-list-l,
@@ -152,12 +156,17 @@ nav ul {
 /************************************* GAME CRAP: *************************************/
 .sheephunt-section {
   text-align: center;
-  /*background: var(--main-green); */
+  padding: 10rem 2rem;
+  background: black;
 }
 
 #game {
   border: none;
-  padding: 10rem 2rem;
+}
+
+iframe {
+  transform: scale(1.5);
+  padding-top: 10em;
 }
 
 /************************************* PROJECTS SECTION STUFF *************************************/
@@ -460,7 +469,7 @@ section ul {
   padding-bottom: 1%;
 }
 
-/* for fucking macbook */
+/* for fucking macbook. Purley navbar crap: */
 @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
 screen and (min-device-pixel-ratio : 1.5) { 
   .footer ul {
