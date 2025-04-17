@@ -116,6 +116,9 @@ nav ul {
 #nav-list-r a:hover {
   background: var(--main-green);
 } 
+#nav-list-l a:hover {
+  background: var(--main-green);
+} 
 /* NAV BAR FOR MOBILE */
 @media screen and (max-width: 600px) {
   #nav-list-r a {    
@@ -215,6 +218,12 @@ iframe {
   /* "height: calc(100% - 5.8rem);" gives the images uniformity in their height and therefore the amount of background that they 
   cover. width:100% ensures that the images take up the width of the screen, nothing more, nothing less. I wonder how its gets 
   uniform spacing on both sides of the grid */
+}
+
+.usa-image {
+  height: 30px;     
+  /* ^^^ hope this doesn't effect certs on mobile */
+  width: 50px;
 }
 
 .cert-image {
